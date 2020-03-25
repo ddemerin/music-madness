@@ -1,7 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-import Page from './pages/Page'
-import Page2 from './pages/Page2'
+import Hiatus from './pages/HiatusPage'
+import Snarky from './pages/SnarkyPage'
+import UMO from './pages/UmoPage'
 import HomePage from './pages/HomePage'
 import NotFound from './pages/NotFound'
 
@@ -16,18 +17,22 @@ const App = () => {
               <Link to="/">Go Home</Link>
             </li>
             <li>
-              <Link to="/1">Page 1</Link>
+              <Link to="/hiatus">Hiatus Kaiyote</Link>
             </li>
             <li>
-              <Link to="/2">Page 2</Link>
+              <Link to="/snarky">Snarky Puppy</Link>
+            </li>
+            <li>
+              <Link to="/umo">Unknown Mortal Orchestra</Link>
             </li>
           </ul>
         </nav>
       </header>
       <Switch>
         <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/1" component={Page}></Route>
-        <Route exact path="/2" component={Page2}></Route>
+        <Route exact path="/hiatus" component={Hiatus}></Route>
+        <Route exact path="/snarky" component={Snarky}></Route>
+        <Route exact path="/umo" component={UMO}></Route>
         <Route path="*" component={NotFound}></Route>
       </Switch>
     </Router>
