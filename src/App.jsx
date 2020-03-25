@@ -10,20 +10,27 @@ const App = () => {
   return (
     <Router>
       <header>
-        <h1>Welcome to my SPA</h1>
         <nav>
-          <ul>
+          <ul className="top-links">
             <li>
-              <Link to="/">Go Home</Link>
+              <Link className="band-links" to="/">
+                Go Home
+              </Link>
             </li>
             <li>
-              <Link to="/hiatus">Hiatus Kaiyote</Link>
+              <Link className="band-links" to="/hiatus">
+                Hiatus Kaiyote
+              </Link>
             </li>
             <li>
-              <Link to="/snarky">Snarky Puppy</Link>
+              <Link className="band-links" to="/snarky">
+                Snarky Puppy
+              </Link>
             </li>
             <li>
-              <Link to="/umo">Unknown Mortal Orchestra</Link>
+              <Link className="band-links" to="/umo">
+                Unknown Mortal Orchestra
+              </Link>
             </li>
           </ul>
         </nav>
